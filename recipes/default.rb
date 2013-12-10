@@ -1,25 +1,16 @@
 #
-# Cookbook Name:: chef-msttcorefonts
+# Cookbook Name:: chef-ttf-adf-gillius
 # Recipe:: default
 #
 
 #---------------
-# install msttcorefonts
+# install ttf-adf-gillius
 #---------------
 case node["platform"]
-  when "centos", "redhat", "scientific", "fedora"
-    include_recipe "chef-msttcorefonts::rhel"
+  #when "centos", "redhat", "scientific", "fedora"
+    #include_recipe "chef-ttf-adf-gillius::rhel"
   when "ubuntu"
-    include_recipe "chef-msttcorefonts::debian"
-end
-
-#---------------
-# install improved local.conf
-#---------------
-# from https://wiki.ubuntu.com/Fonts
-cookbook_file "/etc/fonts/local.conf" do
-  source "localfonts.conf"
-  mode 0644
+    include_recipe "chef-ttf-adf-gillius::debian"
 end
 
 #---------------
