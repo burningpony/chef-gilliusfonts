@@ -15,6 +15,6 @@ end
 # install ttf-adf-gillius
 #--------
 apt_package "ttf-adf-gillius" do
-  version default["ttf-adf-gillius"]["version"]
+  version node["ttf-adf-gillius"]["version"]
   action :install # see actions section below
 end
