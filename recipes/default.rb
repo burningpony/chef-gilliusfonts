@@ -10,7 +10,7 @@ case node["platform"]
   #when "centos", "redhat", "scientific", "fedora"
     #include_recipe "chef-ttf-adf-gillius::rhel"
   when "ubuntu"
-    include_recipe "chef-ttf-adf-gillius::debian"
+    include_recipe "chef-gillius::debian"
 end
 
 #---------------

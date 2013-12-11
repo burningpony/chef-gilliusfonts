@@ -1,4 +1,4 @@
-name "chef-ttf-adf-gillius"
+name "chef-gillius"
 maintainer "Russell Osborne"
 maintainer_email "russell@burningpony.com"
 license "Apache 2.0"
